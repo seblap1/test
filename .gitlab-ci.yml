@@ -1,0 +1,6 @@
+stages:
+  - test
+
+variables:
+  SECURITY_SCAN_POLICY: "Secret SCA SAST"
+  CI_DEBUG_TRACE: "true"
