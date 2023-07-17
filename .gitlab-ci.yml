@@ -3,9 +3,14 @@ stages:
 
 variables:
   SECURITY_SCAN_POLICY: "Secret SCA SAST"
-  CI_DEBUG_TRACE: "true"
+  SECURITY_SCAN_COMPONENT_GROUP: seblap
+  CI_DEBUG_TRACE: "false"
+  CODECLIMATE_PREFIX: ""
+  DEFECTDOJO_URL: "https://vt-defectdojo-test.domaintests.loc"
+  DEFECTDOJO_PRODUCT_NAME: "seblap_replatforming"
+  DEFECTDOJO_COMPONENT_NAME: "seblap_replatforming"
 
 include:
-    - project: exfo/users/seblap1/securityscan_test
-      ref: main
+    - project: exfo/innersource/security-tools/securityscans
+      ref: master
       file: '/templates/.gitlabcom-scanning.yml'
