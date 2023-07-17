@@ -4,3 +4,8 @@ stages:
 variables:
   SECURITY_SCAN_POLICY: "Secret SCA SAST"
   CI_DEBUG_TRACE: "true"
+
+include:
+    - project: exfo/users/seblap1/securityscan_test
+      ref: main
+      file: '/templates/.gitlabcom-scanning.yml'
