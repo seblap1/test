@@ -5,8 +5,8 @@ variables:
   SECURITY_SCAN_POLICY: "Secret SCA SAST"
   SECURITY_SCAN_COMPONENT_GROUP: seblap
   CI_DEBUG_TRACE: "false"
-  CODECLIMATE_PREFIX: ""
-  DEFECTDOJO_URL: "https://vt-defectdojo-test.domaintests.loc"
+  #CODECLIMATE_PREFIX: ""
+  #DEFECTDOJO_URL: "https://vt-defectdojo-test.domaintests.loc"
   DEFECTDOJO_PRODUCT_NAME: "seblap_replatforming"
   DEFECTDOJO_COMPONENT_NAME: "seblap_replatforming"
 
